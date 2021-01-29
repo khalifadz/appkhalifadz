@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+ height: 100px;
+ width: 100%;
+ background-image:linear-gradient(to right,red ,rgb(243, 127, 127));
+    
+}
+#logobox{
+width: 30%;
+height: 100%;
+float: right;
+background: white;
+
+}
+#h1header{
+    float: left;
+    line-height: 100px;/* لجعل العنوان في المنتصف header=100px*/
+    padding: 0 15px;
+    font-family: 'Cairo', sans-serif;
+}
+#image{
+    height: 100%;
+    border-radius: 50%;/*الصورة دائرية */
+}
+header a{
+    color:black;
+}
+nav {
+    width: 70%;
+    text-align: center;
+   }
+nav a{
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 200px;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 200px;
+}
+main {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(225, 55, 55);
+    border-top: 3px solid white;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+    animation-name:changebackground ;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+aside {
+    width: 30%;
+    height: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    float: left;
+}  
+aside img{
+    width: 90%;
+}
+aside img:hover{
+    width: 92%;
+
+}
+#h1aside{
+    padding: 10px 0;
+    border-bottom: 2px solid red;
+    font-family: 'Cairo', sans-serif;
+}
+#article {
+    width: 70%;
+    height:450px;
+    /*background-color: black;*/
+    float: right;
+    position: relative;
+}
+#article p{
+    text-align:center;
+}
+#article h2{
+    text-align:center;
+    line-height: 720px;
+    font-family: 'Cairo', sans-serif;
+    color: cornsilk;
+   
+    
+}
+#box {
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    background-color: #fafafa;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 5px;
+}
+#box h1{
+    border-bottom: 3px solid red;
+    padding: 15px 0;
+    font-family: 'Cairo', sans-serif;
+}
+#box p{
+    font-family: 'Cairo', sans-serif;
+     text-align: center;
+}
+#box1 {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(255, 55, 55);
+    top:50%;
+    left:15%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: none;
+}
+#imgbox1{
+    height: 70%;
+    border-radius: 50%;
+    padding: 15px;
+    
+}
+
+#h1box1{
+    border-top: 3px solid white;
+    padding: 5px;
+    font-family: 'Cairo', sans-serif;
+     text-align: center;
+}
+#box2 {
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        background-color: rgb(255, 55, 55);
+        top:50%;
+        left:85%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: none;
+}
+#imgbox2{
+            height: 70%;
+            border-radius: 50%;
+            padding: 15px;
+          
+            
+}
+#h1box2{
+    border-top: 3px solid white;
+    padding: 5px;
+    font-family: 'Cairo', sans-serif;
+     text-align: center;
+}
+
+#article h1{
+    text-align:center;
+    
+}
+
+#contact-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 15px;
+
+}
+#contact-box img{
+    width: 50px;
+    border-bottom: 2px double red;
+    padding-bottom:  10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#contact-box img:hover{
+width: 60px;
+border-bottom: 2px solid black;
+}
+@keyframes changebackground{
+    0%{
+        background-color:white;
+    }
+    50%{
+        background-color: rgb(225, 55, 55);
+    }
+    100%{
+        background-color:white;
+    }
+}
+   footer{
+       width: 100%;
+       height: 90px;
+       background-color: red;
+       border-top: 4px solid white;
+       
+   } 
+#h2footer{
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
